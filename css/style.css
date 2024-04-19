@@ -1,0 +1,41 @@
+/* ini file css */
+main {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.RevoU {
+    text-align: center;
+    color: rgb(7, 131, 131);
+}
+.section-utama {
+    padding: 16px;
+    background-color: rgb(213, 251, 255);
+    border-radius: 16px;
+}
+.section-dua {
+    padding-top: 16px;
+}
+.section-tiga {
+    padding-top: 16px;
+}
+.section-empat {
+    padding-top: 16px;
+}
+.section-lima {
+    padding-top: 16px;
+}
+textarea {
+    width: 450px;
+    height: 75px;
+}
+#S {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+#A {
+    font-size: 20px;
+    font-weight: bold;
+}
