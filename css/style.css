@@ -1,8 +1,16 @@
 /* ini file css */
+button {
+    padding: 8px;
+    margin-right: 8px;
+    font-size:medium;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    border-radius: 8px;
+    border: none;
+}
 main {
-    padding-left: 32px;
-    padding-right: 32px;
     padding-top: 64px;
+    padding-right: 32px;
+    padding-left: 32px;
     padding-bottom: 64px;
 }
 .RevoU {
@@ -11,8 +19,8 @@ main {
 }
 .section-utama {
     padding: 16px;
-    background-color: rgb(213, 251, 255);
     border-radius: 16px;
+    background-color: rgb(213, 251, 255);
 }
 .section-dua {
     padding-top: 16px;
@@ -27,15 +35,23 @@ main {
     padding-top: 16px;
 }
 textarea {
-    width: 450px;
+    width: 475px;
+    resize: none;
+    padding-inline-start: 12px;
+    padding-top: 12px;
     height: 75px;
+    font-size:x-large;
+    font-family:'Courier New', Courier, monospace;
+    color: azure;
+    border-radius: 8px;
+    background-color:rgb(36, 75, 109);
+}
+#A {
+    font-size: 20px;
+    font-weight: bold;
 }
 #S {
     font-size: 20px;
     font-style: italic;
-    font-weight: bold;
-}
-#A {
-    font-size: 20px;
     font-weight: bold;
 }
