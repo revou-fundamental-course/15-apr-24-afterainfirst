@@ -7,18 +7,38 @@ button {
     border-radius: 8px;
     border: none;
 }
+.flex-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.flex-container img {
+    margin-left: 24px;
+}
 main {
     padding-top: 64px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 264px;
+    padding-left: 264px;
     padding-bottom: 64px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 .RevoU {
     text-align: center;
+    grid-template-columns: auto auto;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
     color: rgb(7, 131, 131);
+    align-items: center;    
 }
 .section-utama {
-    padding: 16px;
+    text-align: justify;
+    padding: 32px;
+    font-size:larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:600;
     border-radius: 16px;
     background-color: rgb(213, 251, 255);
 }
@@ -35,7 +55,7 @@ main {
     padding-top: 16px;
 }
 textarea {
-    width: 475px;
+    width: 97.5%;
     resize: none;
     padding-inline-start: 12px;
     padding-top: 12px;
@@ -46,9 +66,24 @@ textarea {
     border-radius: 8px;
     background-color:rgb(36, 75, 109);
 }
+textarea::placeholder {
+    color: azure;
+}
 #A {
     font-size: 20px;
     font-weight: bold;
+}
+#container {
+    position: relative;
+}
+#logoSatu {
+    float:inline-end;
+    width: 15%;
+}
+#logoDua {
+    float:right;
+    margin-bottom: 30px;
+    width: 50%;
 }
 #S {
     font-size: 20px;
