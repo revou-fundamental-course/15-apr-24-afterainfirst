@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Konverter Suhu</title>
-    </head>
+<head>
+    <title>Konverter Suhu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
 <body>
-  <main>
+<main>
     <header class="RevoU">
         <h1>Konverter Suhu RevoU</h1>
     </header>
     <section class="section-utama">
-    <!-- section satu -->
-    <section class="section-satu">
-<p style="text-align: justify;">Masukkan suhu derajat Celsius (&deg;C) ke dalam kotak dibawah, lalu klik tombol "Konversi" untuk mendapatkan hasil konversi dalam bentuk Farenheit (&deg;F).</p>
-
+        <!-- section satu -->
+        <section class="section-satu">
+            <p>Masukkan suhu derajat Celsius (&deg;C) ke dalam kotak bertuliskan "Temperatur Celsius" dibawah, lalu klik tombol "Konversi" untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F). Dan sebaliknya masukkan suhu derajat Fahrenheit (&deg;F) ke dalam kotak bertuliskan "Temperatur Fahrenheit" dibawah, lalu klik tombol "Reverse" untuk mendapatkan hasil konversi dalam bentuk Celsius (&deg;C).</p>
+        </section>
+        <!-- section dua -->
+        <section class="section-dua">
+            <h3>Celsius (&deg;C) :</h3>
+            <textarea type="number" id="inputCelsius" placeholder="Temperatur  Celsius"></textarea>
+            <div style="padding-top: 12px;">
+                <button style="background-color: aquamarine;" onclick="convertToCelsius()">Konversi</button>
+<button style="background-color: rgb(255, 228, 108)" onclick="reset()">Reset</button>
+<button style="background-color: rgb(245, 171, 34);" onclick="reverseConversion()">Reverse</button>
+            </div>
+        </section>
+        <!-- section tiga -->
+        <section class="section-tiga">
+            <h3>Fahrenheit (&deg;F) :</h3>
+            <textarea type="number" id="outputFahrenheit" placeholder="Temperatur Fahrenheit"></textarea>
+        </section>
+        <!-- section empat -->
+        <section class="section-empat">
+            <h3>Cara Kalkulasi :</h3>
+            <textarea style="background-color: #116022;" readonly id="calculation"></textarea>
+        </section>
+        <!-- section lima -->
+        <section class="section-lima">
+            <p style="color: blueviolet;">Fahrenheit ke Celsius</p>
+            <h3>Cara konversi dari Celsius (&deg;C) ke Fahrenheit (&deg;F) :</h3>
+            <hr>
+            <p>Suhu <span id="S">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span id="S">S</span> dalam derajat Celsius (&deg;C) kali <span id="A">9/5</span> tambah <span id="A">32</span>.</p>
+            <p style="font-weight: bold;"><span id="S">S<sub style="font-style: normal;">(&deg;F)</sub></span> = (<span id="S">S<sub style="font-style: normal;">(&deg;C)</sub></span> x <span id="A">9/5</span>) + <span id="A">32</span></p>
+            <p>atau</p>
+            <p style="font-weight: bold;"><span id="S">S<sub style="font-style: normal;">(&deg;F)</sub></span> = (<span id="S">S<sub style="font-style: normal;">(&deg;C)</sub></span> x <span id="A">1.8</span>) + <span id="A">32</span></p>
+        </section>
     </section>
-    <!-- section dua -->
-    <section class="section-dua">
-        <h3>Celsius (&deg;C) :</h3>
-        <textarea></textarea>
-        <div style="padding-top: 12px;">
-        <button style="background-color: aquamarine;">Konversi</button>
-        <button style="background-color:rgb(255, 228, 108)">Reset</button>
-        <button style="background-color:rgb(245, 171, 34);">Reverse</button>
-        </div>
-        
-            </section>
-     <!-- section tiga -->
-     <section class="section-tiga">
-        <h3>Fahrenheit (&deg;F) :</h3>
-        <textarea></textarea>        
-            </section>
-     <!-- section empat -->
-     <section class="section-empat">
-        <h3>Cara Kalkulasi :</h3>
-        <textarea></textarea>
-        
-            </section>
-     <!-- section lima -->
-     <section class="section-lima">
-        <p style="color: blueviolet;">Fahrenheit ke Celsius</p>
-        <h3>Cara konversi dari Celsius (&deg;C)ke Fahrenheit (&deg;F) :</h3>
-        <hr>
-        <span>Suhu <span id="S">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span id="S">S</span> dalam derajat Celsius (&deg;C) kali <span id="A">9/5</span> tambah <span id="A">32</span>.</span>
-        <p style="font-weight: bold;"><span id="S">S<sub style="font-style: normal;">(&deg;F)</sub></span> = (<span id="S">S<sub style="font-style: normal;">(&deg;C)</sub></span> x <span id="A">9/5</span>) + <span id="A">32</span></p>
-        <p>atau</p>
-        <p style="font-weight: bold;"><span id="S">S<sub style="font-style: normal;">(&deg;F)</sub></span> = (<span id="S">S<sub style="font-style: normal;">(&deg;C)</sub></span> x <span id="A">1.8</span>) + <span id="A">32</span></p>
-        
-            </section>
-    </section>
-  </main>
-
-
+</main>
 </body>
 </html>
