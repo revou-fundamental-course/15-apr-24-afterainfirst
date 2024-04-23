@@ -37,7 +37,7 @@ main {
     text-align: justify;
     padding: 32px;
     font-size:larger;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:600;
     border-radius: 16px;
     background-color: rgb(213, 251, 255);
