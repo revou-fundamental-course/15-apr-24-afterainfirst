@@ -33,6 +33,26 @@ main {
     color: rgb(7, 131, 131);
     align-items: center;    
 }
+.section-dua {
+    padding-top: 16px;
+    font-size: larger;
+    font-weight: bold;
+}
+.section-tiga {
+    padding-top: 16px;
+    font-size: larger;
+    font-weight: bold;
+}
+.section-empat {
+    padding-top: 16px;
+    font-size: larger;
+    font-weight: bold;
+}
+.section-lima {
+    padding-top: 16px;
+    font-size: larger;
+    font-weight: bold;
+}
 .section-utama {
     text-align: justify;
     padding: 32px;
@@ -41,18 +61,6 @@ main {
     font-weight:600;
     border-radius: 16px;
     background-color: rgb(213, 251, 255);
-}
-.section-dua {
-    padding-top: 16px;
-}
-.section-tiga {
-    padding-top: 16px;
-}
-.section-empat {
-    padding-top: 16px;
-}
-.section-lima {
-    padding-top: 16px;
 }
 textarea {
     width: 97.5%;
@@ -77,21 +85,27 @@ textarea::placeholder {
     position: relative;
 }
 #logoSatu {
-    float:inline-end;
     width: 15%;
+    float:inline-end;
 }
 #logoDua {
+    width: 50%;
     position: relative;
+    left: 180px;
     float: right;    
     bottom: 35px;
-    left: 180px;
-    width: 50%;
     animation: moveImage 5s infinite alternate;
 }
+#logoTiga {
+    display: none;
+}
+#logoEmpat {
+    display: none;
+}
 #S {
-    font-size: 20px;
-    font-style: italic;
     font-weight: bold;
+    font-style: italic;
+    font-size: 20px;    
 }
   
   @keyframes moveImage {
@@ -102,3 +116,132 @@ textarea::placeholder {
       transform: translate(-30%, 30%);
     }
   }
+  @media screen and (max-width: 900px) {
+    #logoSatu {
+        display: none;
+    }
+    #logoDua {
+       display: none;
+    }
+    #logoTiga {
+        width: 150%;
+        margin-bottom: 12px;
+        flex-direction: row;
+        display: block;
+    }
+    #logoEmpat {
+        width: fit-content; 
+        display: block;
+    }
+    .flex-container {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .flex-container img {
+        margin-left: 10px;
+    }
+  
+}
+  @media screen and (max-width: 600px) {
+    button {
+        padding: 8px;
+        margin-right: 8px;
+        font-size:smaller;
+        font-family: 'Georgia', Times New Roman, Times, serif;
+        border-radius: 8px;
+        border: none;
+    }
+    .flex-container {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .flex-container img {
+        margin-left: 10px;
+    }
+    main {
+        padding-top: 64px;
+        padding-right: 264px;
+        padding-left: 264px;
+        padding-bottom: 64px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .RevoU {
+        text-align: center;
+        grid-template-columns: auto auto;
+        font-size: 16px;
+        font-family: 'Courier New', Courier, monospace;
+        display: grid;
+        color: rgb(5, 5, 167);
+        align-items: center;    
+    }
+    .section-dua {
+        padding-top: 10px;
+        font-size: small;
+        font-weight: bold;
+    }
+    .section-tiga {
+        padding-top: 10px;
+        font-size: small;
+        font-weight: bold;
+    }
+    .section-empat {
+        padding-top: 10px;
+        font-size: small;
+        font-weight: bold;
+    }
+    .section-lima {
+        padding-top: 10px;
+        font-size: small;
+        font-weight: bold;
+    }
+    .section-utama {
+        text-align: justify;
+        padding: 32px;
+        font-size: 12px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:600;
+        border-radius: 16px;
+        background-color: rgb(213, 251, 255);
+    }
+    textarea {
+        width: 97.5%;
+        resize: none;
+        padding-inline-start: 12px;
+        padding-top: 12px;
+        height: 75px;
+        font-size:x-small;
+        font-family:'Courier New', Courier, monospace;
+        color: azure;
+        border-radius: 8px;
+        background-color:rgb(36, 75, 109);
+    }
+    textarea::placeholder {
+        color: azure;
+    }
+    #A {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    #container {
+        position: relative;
+    }
+    #S {
+        font-size: 10px;
+        font-style: italic;
+        font-weight: bold;
+    }
+      
+      @keyframes moveImage {
+        0% {
+          transform: translate(-30%, -30%);
+        }
+        100% {
+          transform: translate(-30%, 30%);
+        }
+      }
+    }
